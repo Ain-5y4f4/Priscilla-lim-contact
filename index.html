@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Priscilla Lim | PKFZ</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(13, 112, 232, 0.28),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(0, 87, 180, 0.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #010817,
+            #03152d 50%,
+            #010a18
+        );
+
+    color: #ffffff;
+
+    padding: 30px 20px;
+
+}
+
+
+/* MAIN CARD */
+
+.card {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    min-height: 560px;
+
+    margin: auto;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(7, 31, 62, 0.98),
+            rgba(2, 15, 31, 0.98)
+        );
+
+    border:
+        1px solid
+        rgba(56, 151, 255, 0.45);
+
+    box-shadow:
+
+        0 35px 90px
+        rgba(0, 0, 0, 0.65),
+
+        inset 0 1px 0
+        rgba(255,255,255,0.05);
+
+}
+
+
+/* DECORATION */
+
+.card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    right: -220px;
+
+    top: -250px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,126,255,0.20),
+            transparent 65%
+        );
+
+    pointer-events: none;
+
+}
+
+
+.card::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: -150px;
+
+    bottom: -250px;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,91,190,0.13),
+            transparent 65%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* TOP BAR */
+
+.top-bar {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 28px 40px 22px;
+
+}
+
+
+.logo {
+
+    width: 190px;
+
+    max-height: 75px;
+
+    object-fit: contain;
+
+}
+
+
+.card-label {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #7fa8d3;
+
+    font-weight: 600;
+
+}
+
+
+/* BLUE LINE */
+
+.blue-line {
+
+    position: relative;
+
+    z-index: 2;
+
+    height: 1px;
+
+    margin: 0 40px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #1688ff 15%,
+            #1688ff 85%,
+            transparent
+        );
+
+    opacity: 0.65;
+
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        280px
+        1fr;
+
+    gap: 45px;
+
+    padding: 42px 40px 35px;
+
+}
+
+
+/* PHOTO */
+
+.photo-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.photo-frame {
+
+    width: 225px;
+
+    height: 225px;
+
+    padding: 5px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1a9aff,
+            #0756c7,
+            #0b2b58
+        );
+
+    box-shadow:
+
+        0 0 0 1px
+        rgba(40,150,255,0.4),
+
+        0 20px 50px
+        rgba(0,0,0,0.55);
+
+}
+
+
+.profile {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border:
+        4px solid
+        #061a35;
+
+}
+
+
+/* PHOTO CAPTION */
+
+.photo-caption {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+}
+
+
+.photo-caption .company {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #5caeff;
+
+}
+
+
+.photo-caption .country {
+
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    color: #7189a5;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* INFORMATION */
+
+.info-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.name {
+
+    margin: 0;
+
+    font-size: 44px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    letter-spacing: -1.2px;
+
+}
+
+
+.position {
+
+    margin-top: 9px;
+
+    color: #168cff;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+}
+
+
+.company-name {
+
+    margin-top: 5px;
+
+    color: #d5e4f5;
+
+    font-size: 16px;
+
+}
+
+
+/* ACCENT */
+
+.name-accent {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.name-accent .line {
+
+    width: 55px;
+
+    height: 2px;
+
+    background: #168cff;
+
+}
+
+
+.name-accent .dot {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #168cff;
+
+    box-shadow:
+        0 0 10px
+        rgba(22,140,255,0.8);
+
+}
+
+
+/* CONTACT GRID */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(200px, 1fr));
+
+    gap: 10px;
+
+}
+
+
+.contact-item {
+
+    min-height: 66px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 10px 13px;
+
+    text-decoration: none;
+
+    color: white;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(16,58,103,0.72),
+            rgba(5,27,54,0.72)
+        );
+
+    border:
+        1px solid
+        rgba(94,169,237,0.16);
+
+    transition:
+        transform 0.2s ease,
+        border 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.contact-item:hover {
+
+    transform:
+        translateY(-2px);
+
+    border-color:
+        rgba(30,142,255,0.65);
+
+}
+
+
+.contact-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    margin-right: 11px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #168cff,
+            #0755c7
+        );
+
+    font-size: 18px;
+
+}
+
+
+.contact-label {
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: #5eacff;
+
+    font-weight: 700;
+
+    margin-bottom: 3px;
+
+}
+
+
+.contact-value {
+
+    font-size: 13px;
+
+    color: #eef6ff;
+
+    line-height: 1.35;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+/* ADDRESS */
+
+.address {
+
+    grid-column: 1 / -1;
+
+}
+
+
+/* SAVE CONTACT */
+
+.save-contact {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #168cff,
+            #0755ca
+        );
+
+    border:
+        1px solid
+        rgba(112,193,255,0.5);
+
+    box-shadow:
+
+        0 12px 30px
+        rgba(0,105,255,0.28);
+
+}
+
+
+.save-icon {
+
+    font-size: 22px;
+
+    margin-right: 9px;
+
+}
+
+
+/* FOOTER */
+
+.footer {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 17px 40px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.09);
+
+    color: #7189a5;
+
+    font-size: 10px;
+
+    letter-spacing: 0.8px;
+
+}
+
+
+.footer strong {
+
+    color: #c8d9ec;
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+    .main-content {
+
+        grid-template-columns:
+            210px
+            1fr;
+
+        gap: 25px;
+
+        padding:
+            35px 25px 30px;
+
+    }
+
+
+    .photo-frame {
+
+        width: 170px;
+
+        height: 170px;
+
+    }
+
+
+    .name {
+
+        font-size: 34px;
+
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .address {
+
+        grid-column: auto;
+
+    }
+
+
+    .top-bar {
+
+        padding:
+            23px 25px 18px;
+
+    }
+
+
+    .blue-line {
+
+        margin:
+            0 25px;
+
+    }
+
+
+    .footer {
+
+        padding:
+            15px 25px;
+
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 8px;
+
+    }
+
+
+    .card {
+
+        border-radius: 20px;
+
+    }
+
+
+    .top-bar {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+
+        padding:
+            22px 15px 18px;
+
+    }
+
+
+    .logo {
+
+        width: 165px;
+
+    }
+
+
+    .card-label {
+
+        font-size: 8px;
+
+    }
+
+
+    .blue-line {
+
+        margin:
+            0 15px;
+
+    }
+
+
+    .main-content {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding:
+            25px 15px 22px;
+
+    }
+
+
+    .photo-frame {
+
+        width: 145px;
+
+        height: 145px;
+
+    }
+
+
+    .photo-caption {
+
+        display: none;
+
+    }
+
+
+    .info-area {
+
+        text-align: center;
+
+    }
+
+
+    .name {
+
+        font-size: 29px;
+
+    }
+
+
+    .position {
+
+        font-size: 18px;
+
+    }
+
+
+    .company-name {
+
+        font-size: 14px;
+
+    }
+
+
+    .name-accent {
+
+        justify-content: center;
+
+    }
+
+
+    .contact-grid {
+
+        display: flex;
+
+        flex-direction: column;
+
+        text-align: left;
+
+    }
+
+
+    .footer {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        text-align: center;
+
+        padding:
+            15px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+
+        <img
+            src="pkfz-logo.png"
+            alt="Port Klang Free Zone"
+            class="logo"
+        >
+
+        <div class="card-label">
+            DIGITAL BUSINESS CARD
+        </div>
+
+    </div>
+
+
+    <div class="blue-line"></div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+
+        <!-- PHOTO -->
+
+        <div class="photo-area">
+
+            <div class="photo-frame">
+
+                <img
+                    src="profile.jpg"
+                    alt="Priscilla Lim"
+                    class="profile"
+                >
+
+            </div>
+
+
+            <div class="photo-caption">
+
+                <div class="company">
+                    PORT KLANG FREE ZONE
+                </div>
+
+                <div class="country">
+                    MALAYSIA
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INFORMATION -->
+
+        <div class="info-area">
+
+
+            <h1 class="name">
+                Priscilla Lim
+            </h1>
+
+
+            <div class="position">
+                Chief Executive Officer
+            </div>
+
+
+            <div class="company-name">
+                Port Klang Free Zone Sdn Bhd
+            </div>
+
+
+            <div class="name-accent">
+
+                <div class="line"></div>
+
+                <div class="dot"></div>
+
+            </div>
+
+
+
+            <!-- CONTACT GRID -->
+
+            <div class="contact-grid">
+
+
+                <!-- MOBILE -->
+
+                <a
+                    class="contact-item"
+                    href="tel:0163336132"
+                >
+
+                    <div class="contact-icon">
+                        📱
+                    </div>
+
+                    <div>
+
+                        <div class="contact-label">
+                            MOBILE
+                        </div>
+
+                        <div class="contact-value">
+                            016-333 6132
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- OFFICE -->
+
+                <a
+                    class="contact-item"
+                    href="tel:0331015568"
+                >
+
+                    <div class="contact-icon">
+                        ☎
+                    </div>
+
+                    <div>
+
+                        <div class="contact-label">
+                            OFFICE
+                        </div>
+
+                        <div class="contact-value">
+                            03-3101 5568
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="contact-item"
+                    href="mailto:priscilla.lim@pkfz.com"
+                >
+
+                    <div class="contact-icon">
+                        ✉
+                    </div>
+
+                    <div>
+
+                        <div class="contact-label">
+                            EMAIL
+                        </div>
+
+                        <div class="contact-value">
+                            priscilla.lim@pkfz.com
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- WECHAT -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        💬
+                    </div>
+
+                    <div>
+
+                        <div class="contact-label">
+                            WECHAT
+                        </div>
+
+                        <div class="contact-value">
+                            pris_limsh
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WEBSITE -->
+
+                <a
+                    class="contact-item"
+                    href="https://www.pkfz.com"
+                    target="_blank"
+                    rel="noopener"
+                >
+
+                    <div class="contact-icon">
+                        🌐
+                    </div>
+
+                    <div>
+
+                        <div class="contact-label">
+                            WEBSITE
+                        </div>
+
+                        <div class="contact-value">
+                            www.pkfz.com
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- ADDRESS -->
+
+                <a
+                    class="contact-item address"
+                    href="https://www.google.com/maps/search/?api=1&query=Port+Klang+Free+Zone+Pulau+Indah+Selangor"
+                    target="_blank"
+                    rel="noopener"
+                >
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <div class="contact-label">
+                            OFFICE ADDRESS
+                        </div>
+
+                        <div class="contact-value">
+                            Jalan FZ 2-P5, Port Klang Free Zone/KS 12,
+                            42920 Pulau Indah, Selangor Darul Ehsan,
+                            Malaysia
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- SAVE CONTACT -->
+
+            <a
+                class="save-contact"
+                href="contact.vcf"
+            >
+
+                <span class="save-icon">
+                    👤+
+                </span>
+
+                Save Contact
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        <div>
+            <strong>
+                PORT KLANG FREE ZONE
+            </strong>
+        </div>
+
+        <div>
+            DIGITAL BUSINESS CARD
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
